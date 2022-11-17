@@ -1,0 +1,147 @@
+{"properties": [
+  {
+    "name": "instances.user-service.base-config",
+    "type": "java.lang.String",
+    "description": "A description for 'instances.user-service.base-config'"
+  },
+  {
+    "name": "instances.fallback.base-config",
+    "type": "java.lang.String",
+    "description": "A description for 'instances.fallback.base-config'"
+  },
+  {
+    "name": "resilience4j.ratelimiter.timelimiter.instances.get-product.base-config",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.ratelimiter.timelimiter.instances.get-product.base-config'"
+  },
+  {
+    "name": "resilience4j.ratelimiter.timelimiter.configs.default.cancel-running-future",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.ratelimiter.timelimiter.configs.default.cancel-running-future'"
+  },
+  {
+    "name": "resilience4j.ratelimiter.timelimiter.configs.default.timeoutDuration",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.ratelimiter.timelimiter.configs.default.timeoutDuration'"
+  },
+  {
+    "name": "bulkhead.instances.bulkhead-service1.max-wait-duration",
+    "type": "java.lang.String",
+    "description": "A description for 'bulkhead.instances.bulkhead-service1.max-wait-duration'"
+  },
+  {
+    "name": "thread-pool-bulkhead.instances.bulkhead-service1.max-thread-pool-size",
+    "type": "java.lang.String",
+    "description": "A description for 'thread-pool-bulkhead.instances.bulkhead-service1.max-thread-pool-size'"
+  },
+  {
+    "name": "bulkhead.instances.bulkhead-service1.maxConcurrentCall",
+    "type": "java.lang.String",
+    "description": "A description for 'bulkhead.instances.bulkhead-service1.maxConcurrentCall'"
+  },
+  {
+    "name": "thread-pool-bulkhead.instances.bulkhead-service1.queueCapacity",
+    "type": "java.lang.String",
+    "description": "A description for 'thread-pool-bulkhead.instances.bulkhead-service1.queueCapacity'"
+  },
+  {
+    "name": "thread-pool-bulkhead.instances.bulkhead-service1.coreThreadPoolSize",
+    "type": "java.lang.String",
+    "description": "A description for 'thread-pool-bulkhead.instances.bulkhead-service1.coreThreadPoolSize'"
+  },
+  {
+    "name": "timelimiter.configs.default.timeout-duration",
+    "type": "java.lang.String",
+    "description": "A description for 'timelimiter.configs.default.timeout-duration'"
+  },
+  {
+    "name": "timelimiter.configs.default.cancelRunningFuture",
+    "type": "java.lang.String",
+    "description": "A description for 'timelimiter.configs.default.cancelRunningFuture'"
+  },
+  {
+    "name": "ratelimiter.configs.default.limit-for-period",
+    "type": "java.lang.String",
+    "description": "A description for 'ratelimiter.configs.default.limit-for-period'"
+  },
+  {
+    "name": "ratelimiter.configs.default.limitRefreshPeriod",
+    "type": "java.lang.String",
+    "description": "A description for 'ratelimiter.configs.default.limitRefreshPeriod'"
+  },
+  {
+    "name": "ratelimiter.configs.default.timeoutDuration",
+    "type": "java.lang.String",
+    "description": "A description for 'ratelimiter.configs.default.timeoutDuration'"
+  },
+  {
+    "name": "ratelimiter.configs.getProductConfig.limit-for-period",
+    "type": "java.lang.String",
+    "description": "A description for 'ratelimiter.configs.getProductConfig.limit-for-period'"
+  },
+  {
+    "name": "ratelimiter.configs.getProductConfig.limitRefreshPeriod",
+    "type": "java.lang.String",
+    "description": "A description for 'ratelimiter.configs.getProductConfig.limitRefreshPeriod'"
+  },
+  {
+    "name": "ratelimiter.configs.getProductConfig.timeoutDuration",
+    "type": "java.lang.String",
+    "description": "A description for 'ratelimiter.configs.getProductConfig.timeoutDuration'"
+  },
+  {
+    "name": "ratelimiter.instances.get-product.base-config",
+    "type": "java.lang.String",
+    "description": "A description for 'ratelimiter.instances.get-product.base-config'"
+  },
+  {
+    "name": "timelimiter.instances.get-product.base-config",
+    "type": "java.lang.String",
+    "description": "A description for 'timelimiter.instances.get-product.base-config'"
+  },
+  {
+    "name": "retry.instances.get-user.max-attempts",
+    "type": "java.lang.String",
+    "description": "A description for 'retry.instances.get-user.max-attempts'"
+  },
+  {
+    "name": "retry.instances.get-user.waitDuration",
+    "type": "java.lang.String",
+    "description": "A description for 'retry.instances.get-user.waitDuration'"
+  },
+  {
+    "name": "retry.instances.get-user.exponentialBackoffMultiplier",
+    "type": "java.lang.String",
+    "description": "A description for 'retry.instances.get-user.exponentialBackoffMultiplier'"
+  },
+  {
+    "name": "retry.instances.get-user.enableExponentialBackoff",
+    "type": "java.lang.String",
+    "description": "A description for 'retry.instances.get-user.enableExponentialBackoff'"
+  },
+  {
+    "name": "bulkhead.instances.getProduct2.max-wait-duration",
+    "type": "java.lang.String",
+    "description": "A description for 'bulkhead.instances.getProduct2.max-wait-duration'"
+  },
+  {
+    "name": "bulkhead.instances.getProduct2.maxConcurrentCall",
+    "type": "java.lang.String",
+    "description": "A description for 'bulkhead.instances.getProduct2.maxConcurrentCall'"
+  },
+  {
+    "name": "thread-pool-bulkhead.instances.getProduct2.max-thread-pool-size",
+    "type": "java.lang.String",
+    "description": "A description for 'thread-pool-bulkhead.instances.getProduct2.max-thread-pool-size'"
+  },
+  {
+    "name": "thread-pool-bulkhead.instances.getProduct2.coreThreadPoolSize",
+    "type": "java.lang.String",
+    "description": "A description for 'thread-pool-bulkhead.instances.getProduct2.coreThreadPoolSize'"
+  },
+  {
+    "name": "thread-pool-bulkhead.instances.getProduct2.queueCapacity",
+    "type": "java.lang.String",
+    "description": "A description for 'thread-pool-bulkhead.instances.getProduct2.queueCapacity'"
+  }
+]}

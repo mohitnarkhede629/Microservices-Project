@@ -1,0 +1,92 @@
+
+spring:
+  application:
+    name: user-service
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+        
+  endpoint:
+    health:
+      show-details: always
+resilience4j:
+  circuitbreaker:
+    instances:
+      getProduct:
+            registerHealthIndicator: true
+            slidingWindowSize: 10
+            minimumNumberOfCalls: 5
+            permittedNumberOfCallsInHalfOpenState: 3
+            automaticTransitionFromOpenToHalfOpenEnabled: true
+            waitDurationInOpenState: 5s
+            failureRateThreshold: 50
+      
+retry:
+  instances:
+    getUser:
+      maxAttempts: 5
+      waitDuration: 1000
+      enableExponentialBackoff: true
+      exponentialBackoffMultiplier: 2
+
+
+ratelimiter:
+    configs:
+      default:
+        limitForPeriod: 2
+        limitRefreshPeriod: 5s
+        timeoutDuration: 100ms
+      getProductConfig:
+        limitForPeriod: 1
+        limitRefreshPeriod: 5s
+        timeoutDuration: 100ms
+    instances:
+      getProduct:
+        baseConfig: getProductConfig
+      
+
+timelimiter:
+        configs:
+            default:
+                timeoutDuration: 10
+                cancelRunningFuture: true
+        instances:
+            getProduct:
+                baseConfig: default
+                
+bulkhead:
+  instances:
+    getProduct2:
+      maxWaitDuration: 1000ms
+      maxConcurrentCall: 2
+
+thread-pool-bulkhead:
+  instances:
+    getProduct2:
+      maxThreadPoolSize: 1
+      coreThreadPoolSize: 1
+      queueCapacity: 1                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
